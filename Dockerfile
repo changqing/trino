@@ -1,8 +1,7 @@
 FROM trinodb/trino:385
 
-SHELL ["/bin/bash","-c"]
 
-RUN cat conf/hosts >> /etc/hosts
+RUN /bin/sh -c 'cat conf/hosts >> /etc/hosts'
 
 USER trino:trino
 
