@@ -2,7 +2,7 @@ FROM trinodb/trino:385
 
 COPY conf/hosts /home/trino/hosts
 
-#RUN cat conf/hosts
+RUN cat /home/trino/hosts
 
 USER trino:trino
 
